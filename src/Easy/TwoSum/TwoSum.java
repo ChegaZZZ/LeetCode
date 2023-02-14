@@ -29,6 +29,7 @@ public class TwoSum {
         return indexes;
     }
 
+    // Эталонное решение
     private static int[] twoSum2(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
 
