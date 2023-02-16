@@ -1,11 +1,11 @@
 package Easy.PalindromeNumber;
 
-public class PalindromeNumber {
+public class Solution {
     public static void main(String[] args) {
         System.out.println(isPalindrome(1221));
     }
 
-    public static boolean isPalindrome(int x) {
+    private static boolean isPalindrome(int x) {
         char[] chars = String.valueOf(x).toCharArray();
 
         for (int i = 1; i < chars.length; i++) {
@@ -17,7 +17,7 @@ public class PalindromeNumber {
     }
 
     // Эталонное решение
-    public static boolean isPalindrome2(int x) {
+    private static boolean isPalindrome2(int x) {
         if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }

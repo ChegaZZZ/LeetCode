@@ -3,12 +3,12 @@ package Easy.RomanToInteger;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RomanToInteger {
+public class Solution {
     public static void main(String[] args) {
         System.out.println(romanToInt("MDCXCV"));
     }
 
-    public static int romanToInt(String s) {
+    private static int romanToInt(String s) {
         Map<String, Integer> map = new HashMap<>();
         map.put("I", 1);
         map.put("V", 5);
